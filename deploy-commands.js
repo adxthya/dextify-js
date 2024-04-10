@@ -52,3 +52,12 @@ const rest = new REST().setToken(token);
     console.error(error);
   }
 })();
+
+// To delete a command
+
+// rest
+//   .delete(
+//     Routes.applicationGuildCommand(clientId, guildId, "commandId")
+//   )
+//   .then(() => console.log("Successfully deleted guild command"))
+//   .catch(console.error);
