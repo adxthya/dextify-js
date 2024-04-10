@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const Discord = require("discord.js");
-const { token } = require("./config.json");
+require("dotenv").config();
 const { LimitedCollection } = require("discord.js");
 
 //Intents
@@ -68,7 +68,7 @@ client.on(events.InteractionCreate, async (interaction) => {
   }
 });
 
-client.login(token);
+client.login(process.env.token);
 client.once(events.ClientReady, (readyClient) => {
   console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 });
