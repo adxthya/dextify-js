@@ -10,6 +10,7 @@ const intents = [
   Discord.GatewayIntentBits.GuildMessages,
   Discord.GatewayIntentBits.GuildMessageReactions,
   Discord.GatewayIntentBits.GuildMessageTyping,
+  Discord.GatewayIntentBits.GuildVoiceStates,
 ];
 
 const events = Discord.Events;
